@@ -1,0 +1,33 @@
+
+<div class="row-sm-12">
+    <nav class="navbar bg-info fixed-top">
+        <div class="row-sm-4">
+          <a class="navbar-brand" class="text-white" [routerLink]="['/']"><i class="fa fa-home"></i>&nbsp;Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="navbar-brand" class="text-white" [routerLink]="['/list']"><i class="fa fa-home"></i>&nbsp;User-List</a>
+        </div>
+        <div class="row-sm-4">
+            <a class="navbar-brand" class="text-white" [routerLink]="['/login']"><i class="fa fa-sign-in"></i>&nbsp;Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="navbar-brand" class="text-white" [routerLink]="['/signup']"><i class="fa fa-user"></i>&nbsp;Signup</a>
+        </div>
+      </nav>    
+  </div>
+
+
+  
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<br><br>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-info">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Shopping Cart</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->

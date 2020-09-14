@@ -1,0 +1,52 @@
+{
+  "user": [
+    {
+      "user_name": "Chappu",
+      "user_password": 1122334455,
+      "user_email": "chappu@gmail.com",
+      "user_number": 9981664128,
+      "user_city": "pune",
+      "id": 1
+    },
+    {
+      "user_name": "asdf",
+      "user_password": "pune",
+      "user_email": "asdf@gmail.comasdf",
+      "user_number": 9981664128,
+      "user_city": "Gopalganj",
+      "id": 2
+    },
+    {
+      "user_name": "harshit",
+      "user_password": "asdf123",
+      "user_email": "harshitgiri1998@gmail.com",
+      "user_number": 9981664128,
+      "user_city": "Indore",
+      "id": 3
+    },
+    {
+      "user_name": "appu",
+      "user_password": "qwerty",
+      "user_email": "app@gmail.com",
+      "user_number": 2233445566,
+      "user_city": "patna",
+      "id": 4
+    },
+    {
+      "user_name": "suvam",
+      "user_password": "12345",
+      "user_email": "suvam@gmail.com",
+      "user_number": 1234567891,
+      "user_city": "gohati",
+      "id": 8
+    },
+    {
+      "user_name": "shreayash",
+      "user_password": "123456",
+      "user_email": "asdf@gmail.com",
+      "user_number": 1234567891,
+      "user_city": "pune",
+      "id": 9
+    }
+  ]
+}

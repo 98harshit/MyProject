@@ -1,0 +1,39 @@
+
+<div class="jumbotron" >
+    <div *ngIf = "form" class=" table table-bordered bg-dark text-danger" >
+        <form [formGroup] = "form" (ngSubmit) = "update()">
+            <div>
+                <label>User Name</label>
+                <input type="text" placeholder="Enter your fullname"
+                formControlName = "user_name" />
+            </div>
+            <div>
+                <label>User Password</label>
+                <input type="text" placeholder="Enter Password"
+                formControlName = "user_password" />
+            </div>
+            <div>
+                <label>User Email</label>
+                <input type="text" placeholder="Enter Email"
+                formControlName = "user_email" />
+            </div>
+            <div>
+                <label>User Number</label>
+                <input type="number" placeholder="Enter Number"
+                formControlName = "user_number" />
+            </div>
+            <div>
+                <label>User City</label>
+                <input type="text" placeholder="Enter City"
+                formControlName = "user_city" />
+            </div>
+            
+            <div>
+                &nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-success">Save</button> &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </div>
+        </form>
+    </div>
+    
+</div>

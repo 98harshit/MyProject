@@ -1,0 +1,88 @@
+
+<div id="f">
+
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5" [formGroup]="form" (ngSubmit)="register()">
+    
+        <p class="h4 mb-4">Sign up</p>
+
+        <!-- Name-->
+        <input type="text" id="defaultLoginFormText" class="form-control mb-4" placeholder="Username" formControlName="user_name" >
+        <span *ngIf="form.controls.user_name.touched && !form.controls.user_name.valid" >Username is required</span>
+        
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" formControlName="user_password">
+        <span *ngIf="form.controls.user_password.touched && !form.controls.user_password.valid" >Password is required</span>
+
+        <!-- Email -->
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" formControlName="user_email">
+        <span *ngIf="form.controls.user_email.touched && !form.controls.user_email.valid" >Email is required</span>
+
+        <!-- Number-->
+        <input type="number" id="defaultLoginFormNumber" class="form-control mb-4" placeholder="Mobile Number" formControlName="user_number">
+        <span *ngIf="form.controls.user_number.touched && !form.controls.user_number.valid" >Mobile No. is required</span>
+
+        <!-- City-->
+        <input type="text" id="defaultLoginFormCity" class="form-control mb-4" placeholder="City" formControlName="user_city">
+        <span *ngIf="form.controls.user_city.touched && !form.controls.user_city.valid" >City is required</span>
+    
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                </div>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    
+        <!-- Sign in button -->
+        <button [disabled]="form.invalid" class="btn btn-info btn-block my-4" type="submit">Sign up</button>
+
+        <button class="btn btn-danger btn-block my-4" type="reset">Reset</button>
+    
+        <!-- Register -->
+        <p>If You are a member?
+            <a [routerLink]="['/login']">Login</a>
+        </p>
+    
+    
+    </form>
+    <!-- Default form login -->
+    
+    </div>
+
+    <!-- <table class="bg-muted table table-bordered table-striped table-hover">
+        <thead>
+            <tr> 
+                <th style="text-align: center;background-color: gray;color:white"
+                 colspan="7"> Students Registration Details </th>
+            </tr>
+            <tr>
+                <th> User Name </th>
+                <th> User Password </th>
+                <th> User Email </th>
+                <th> User Number </th>
+                <th> User City </th>
+                <th>Edit User Data</th>
+                <th>Delete User Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let s of user">
+                <td>{{s.user_name}}</td>
+                <td>{{s.user_password}}</td>
+                <td>{{s.user_email}}</td>
+                <td>{{s.user_number}}</td>
+                <td>{{s.user_city}}</td>
+                <td><a class="btn btn-info" >Edit Data</a></td>
+                <td><a class="btn btn-danger" >Delete Data</a></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
